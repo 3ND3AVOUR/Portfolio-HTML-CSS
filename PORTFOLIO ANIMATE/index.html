@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="bg">
+    <nav>
+      <img src="./Img/Untitled-2.jpg" alt="arya tech">
+      <div id="links">
+        <a href="#">Home</a>
+        <a href="#">Contact</a>
+        <i class="ri-search-line"></i>
+        <i id="menu" class="ri-menu-line"></i>
+      </div>
+    </nav>
+    <div id="sections">
+      <div id="left">
+        <div id="smline"></div>
+        <h4>Hello, I am 😎</h4>
+        <img src="./Img/Untitled-1.png" alt="My name is shubham">
+        <h5>A designer from <span id="col">India.</span> </h5>
+        <div id="playbtn">
+          <img src="./Img/play.png" alt="play button">
+          <h5 style="color: white;">See my <span class="bold">work profile</span></h5>
+        </div>
+        <div id="contact">
+          <h3>Contact Me</h3>
+          <h6>Email : <span>subhampattnayak.1@gmail.com</span></h6>
+          <h6>Contact Number: <span>+91-8018094044 / +91-9437254921</span></h6>
+        </div>
+      </div>
+      <div id="right">
+        <img src="./Img/nasa-pd4lo70LdbI-unsplash.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <script>
+    var menu = document.querySelector("menu");
+    var bg = document.querySelector("bg");
+
+    menu.addEventListener('click',function(){
+      bg.style.transform = 'scale(.8)';
+      bg.style.borderRadious = '10px';
+      bg.style.boxshadow = '0 150px 45px -100px rgba(0,0,0,0.2)';
+    })
+  </script>
+</body>
+</html>
